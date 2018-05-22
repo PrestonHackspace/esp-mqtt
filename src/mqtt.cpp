@@ -58,7 +58,7 @@ void mqtt_loop()
   {
     Serial.println("MQTT no longer connected! Will reboot in 5 seconds!");
     delay(5000);
-    ESP.restart();
+    ESP.reset();
   }
 
   mqttClient.loop();
